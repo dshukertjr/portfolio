@@ -1,0 +1,38 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(images/work.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.intro-text {
+    margin: 0;
+    font-size: 54px;
+    padding: 24px;
+    color: #fff;
+    border: 2px solid #fff;
+    font-weight: 400;
+}
