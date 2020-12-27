@@ -36,3 +36,19 @@ header {
     border: 2px solid #fff;
     font-weight: 400;
 }
+
+.bio-title {
+    text-align: center;
+}
+
+.profile-image {
+    margin: 0 auto;
+    display: block;
+    height: 318px;
+}
+
+.bio-paragraph {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8em;
+}
