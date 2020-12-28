@@ -37,8 +37,10 @@ header {
     font-weight: 400;
 }
 
-.bio-title {
+h2 {
     text-align: center;
+    font-weight: 400;
+    font-size: 32px;
 }
 
 .profile-image {
@@ -51,4 +53,68 @@ header {
     text-align: left;
     font-size: 18px;
     line-height: 1.8em;
+}
+
+.favorites-wrapper {
+    background-image: url(images/fun.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 54px 0;
+}
+
+.favorites-wrapper h2 {
+    color: #fff;
+}
+
+.favorites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.favorite {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+.favorite p {
+    font-size: 16px;
+}
+
+.favorite>img {
+    display: block;
+    height: 100px;
+    transition: opacity 0.3s;
+}
+
+.favorite-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.favorite h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.favorite:hover img {
+    opacity: 0.3;
+}
+
+.favorite:hover .favorite-text {
+    opacity: 1;
 }
