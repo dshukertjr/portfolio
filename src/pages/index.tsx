@@ -29,14 +29,14 @@ const Home: NextPage = () => {
 
       <header>
         <div className="h-screen flex justify-center items-center bg-header bg-cover bg-fixed bg-center px-6">
-          <h1 className="text-white px-12 py-6 border-4 border-white text-8xl">
+          <h1 className="text-white px-12 py-6 border-4 border-white text-4xl md:text-8xl">
             Hi, I&apos;m Tyler
           </h1>
         </div>
       </header>
       <main>
         <Wrapper>
-          <h2 className="text-3xl text-center pb-4">About Me</h2>
+          <h2 className="text-center pb-4 text-3xl md:text-5xl">About Me</h2>
           <img className="profile-image w-44 mx-auto" src="images/profile.jpg" alt="profile" />
           <p className="pt-4 text-lg">
             Mobile/ Web app developer. <br />
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
         </Wrapper>
         <div className="bg-fun bg-center bg-fixed bg-cover">
           <Wrapper>
-            <h2 className="text-lg text-white text-center">Things I enjoy</h2>
+            <h2 className="text-white text-center pb-5 text-3xl md:text-5xl">Things I enjoy</h2>
             <div className="flex justify-center items-center flex-wrap">
               {favorites.map((favorite) => {
                 return <FavoriteCell key={favorite.title} favorite={favorite}></FavoriteCell>
@@ -60,12 +60,10 @@ const Home: NextPage = () => {
           </Wrapper>
         </div>
 
-        <div className="wrapper">
-          <div className="container">
-            <h2>Contact me</h2>
-            <div id="hs-form"></div>
-          </div>
-        </div>
+        <Wrapper>
+          <h2 className="text-center text-3xl">Contact me</h2>
+          <div id="hs-form"></div>
+        </Wrapper>
       </main>
     </div>
   )
