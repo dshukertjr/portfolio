@@ -4,15 +4,15 @@ import React from 'react'
 import FavoriteCell from '../components/favorite-cell'
 import { favorites, socials } from '../utils/constants'
 import SocialButton from '../components/social-button'
-import Wrapper from '../components/container'
-// import { useHubspotForm } from '@aaronhayes/react-use-hubspot-form'
+import Wrapper from '../components/wrapper'
+import { useHubspotForm } from '@aaronhayes/react-use-hubspot-form'
 
 const Home: NextPage = () => {
-  // const { loaded, error, formCreated } = useHubspotForm({
-  //   portalId: '9081438',
-  //   formId: '6d925ffc-28b9-43a2-8bf8-ce41753ddc48',
-  //   target: '#hs-form',
-  // })
+  const { loaded, formCreated } = useHubspotForm({
+    portalId: '9081438',
+    formId: '6d925ffc-28b9-43a2-8bf8-ce41753ddc48',
+    target: '#hs-form',
+  })
 
   return (
     <div>
@@ -61,8 +61,11 @@ const Home: NextPage = () => {
         </div>
 
         <Wrapper>
-          <h2 className="text-center text-3xl">Contact me</h2>
+          <h2 className="text-center pb-5 text-3xl md:text-5xl">Contact me</h2>
           <div id="hs-form"></div>
+          {loaded && formCreated ? null : (
+            <div className="text-center py-8 text-lg">Loading Form...</div>
+          )}
         </Wrapper>
       </main>
     </div>
