@@ -36,17 +36,25 @@ const Home: NextPage = () => {
       </header>
       <main>
         <Wrapper>
-          <h2 className="text-center pb-4 text-3xl md:text-5xl">About Me</h2>
-          <img className="profile-image w-44 mx-auto" src="images/profile.jpg" alt="profile" />
-          <p className="pt-4 text-lg">
-            Mobile/ Web app developer. <br />
-            Currently working as a solutions engineer at HubSpot. <br />
-            Enjoy playing team handball. <br />
-          </p>
-          <div className="flex justify-center">
-            {socials.map((social) => {
-              return <SocialButton key={social.name} social={social}></SocialButton>
-            })}
+          <div className="grid grid-cols-2 grid-rows-3">
+            <h2 className="text-center pb-4 text-3xl md:text-5xl md:col-start-2 md:col-end-3 md:pb-0">
+              About Me
+            </h2>
+            <img
+              className="profile-image w-44 mx-auto md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-4"
+              src="images/profile.jpg"
+              alt="profile"
+            />
+            <p className="pt-4 text-lg md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 md:pt-0 md:pb-4">
+              Mobile/ Web app developer. <br />
+              Currently working as a solutions engineer at HubSpot. <br />
+              Enjoy playing team handball. <br />
+            </p>
+            <div className="flex justify-center md:col-start-2 md:col-end-3 md:row-start-3 md:row-end-4">
+              {socials.map((social) => {
+                return <SocialButton key={social.name} social={social}></SocialButton>
+              })}
+            </div>
           </div>
         </Wrapper>
         <div className="bg-fun bg-center bg-fixed bg-cover">
