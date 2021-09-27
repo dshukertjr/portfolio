@@ -7,6 +7,11 @@ export const favorites: Favorite[] = [
     imagePath: 'images/react.svg',
   },
   {
+    title: 'TailwindCSS',
+    description: 'Simple to use CSS framework. This website uses it. ',
+    imagePath: 'images/tailwindcss.svg',
+  },
+  {
     title: 'Flutter',
     description: 'Mobile app framework. Could not love it more.',
     imagePath: 'images/flutter.svg',
