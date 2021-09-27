@@ -36,7 +36,7 @@ const Home: NextPage = () => {
       </header>
       <main>
         <Wrapper>
-          <div className="grid grid-cols-2 grid-rows-3">
+          <div className="md:grid ,d:grid-cols-2 md:grid-rows-3">
             <h2 className="text-center pb-4 text-3xl md:text-5xl md:col-start-2 md:col-end-3 md:pb-0">
               About Me
             </h2>
