@@ -18,7 +18,7 @@ const ArticleCell: FC<{ article: Article }> = ({ article }) => {
         loading="lazy"
       />
       <div className="absolute p-2 inset-0 top-auto bg-black bg-opacity-30">
-        <h4 className="text-lg text-left text-white">{article.title}</h4>
+        <h3 className="text-lg text-left text-white">{article.title}</h3>
       </div>
     </a>
   )

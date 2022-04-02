@@ -13,7 +13,7 @@ const FavoriteCell: FC<{ favorite: Favorite }> = ({ favorite }) => {
         loading="lazy"
       />
       <div className="absolute inset-0 transition-opacity opacity-0 cursor-default group-hover:opacity-100">
-        <h4 className="text-lg text-white text-center">{favorite.title}</h4>
+        <h3 className="text-lg text-white text-center">{favorite.title}</h3>
         <p className="text-sm text-white">{favorite.description}</p>
       </div>
     </div>
