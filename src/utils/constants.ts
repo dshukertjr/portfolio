@@ -22,14 +22,9 @@ export const favorites: Favorite[] = [
     imagePath: 'images/figma.svg',
   },
   {
-    title: 'Firebase',
-    description: 'Backend for apps. Go to backend tool. Wish if they had SQL database though.',
-    imagePath: 'images/firebase.svg',
-  },
-  {
     title: 'Supabase',
     description:
-      'Firebase with SQL database. Still lot more work to be done, but I am excited for it.',
+      'Everyone&apos;s favorite open source Firebase alternative. Give it a try if you haven&apos;t yet.',
     imagePath: 'images/supabase.svg',
   },
   {
