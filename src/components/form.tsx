@@ -100,7 +100,7 @@ const ProfileForm: FC = () => {
         required={true}
         onChange={(val) => setMessage(val)}
       ></FormField>
-      <button className="bg-lime-500 text-white py-2 px-4 rounded-sm mt-4 text-lg">Send</button>
+      <button className="bg-neutral-700 text-white py-2 px-4 rounded-sm mt-4 text-lg">Send</button>
       {haveSubmitted ? (
         <div className="absolute inset-0 bg-white flex items-center justify-center">
           Thank you for submitting the form. I will get back to you as soon as possible!
