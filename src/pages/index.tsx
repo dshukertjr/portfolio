@@ -49,8 +49,10 @@ const Home: NextPage = () => {
               height="253"
             />
             <p className="pt-4 text-lg md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 md:pt-0 md:pb-4">
+              Tyler Shukert
+              <br />
               Mobile/ Web app developer. <br />
-              Currently working as a solutions engineer at HubSpot. <br />
+              Dev Red/ Softare Enginner at Supabase. <br />
               Enjoy playing team handball. <br />
             </p>
             <div className="flex justify-center md:col-start-2 md:col-end-3 md:row-start-3 md:row-end-4">
