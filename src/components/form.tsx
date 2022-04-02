@@ -63,39 +63,51 @@ const ProfileForm: FC = () => {
     }
   }
 
-  return haveSubmitted ? (
-    <div className="text-lg p-4">
-      Thank you for submitting the form. I will get back to you as soon as possible!
-    </div>
-  ) : (
-    <form onSubmit={submit}>
+  return (
+    <form
+      onSubmit={(e) => {
+        e.preventDefault()
+        submit()
+      }}
+      className="mx-auto max-w-xl relative"
+    >
       <FormField
-        label="email"
+        label="Email"
         name="email"
         type="email"
         required={true}
         onChange={(val) => setEmail(val)}
       ></FormField>
+      <div className="flex">
+        <FormField
+          label="First Name"
+          name="firstname"
+          type="text"
+          onChange={(val) => setFirstName(val)}
+        ></FormField>
+        <div className="w-8"></div>
+        <FormField
+          label="Last Name"
+          name="lastname"
+          type="text"
+          onChange={(val) => setLastName(val)}
+        ></FormField>
+      </div>
       <FormField
-        label="firstname"
-        name="firstname"
-        type="text"
-        onChange={(val) => setFirstName(val)}
-      ></FormField>
-      <FormField
-        label="lastname"
-        name="lastname"
-        type="text"
-        onChange={(val) => setLastName(val)}
-      ></FormField>
-      <FormField
-        label="message"
+        label="Message"
         name="message"
         type="text"
         required={true}
         onChange={(val) => setMessage(val)}
       ></FormField>
-      <button>Send</button>
+      <button className="bg-lime-500 text-white py-2 px-4 rounded-sm mt-4 text-lg">Send</button>
+      {haveSubmitted ? (
+        <div className="absolute inset-0 bg-white flex items-center justify-center">
+          Thank you for submitting the form. I will get back to you as soon as possible!
+        </div>
+      ) : (
+        <div></div>
+      )}
     </form>
   )
 }

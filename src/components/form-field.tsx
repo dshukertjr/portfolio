@@ -10,10 +10,10 @@ const FormField: FC<{
   required?: boolean
 }> = ({ label, name, type, onChange, required = false }) => {
   return (
-    <div className="">
+    <div className="py-2 w-full">
       <label htmlFor={name}>{label}</label>
       <input
-        className="border"
+        className="border border-neutral-700 rounded-sm block w-full p-2"
         id={name}
         name={name}
         type={type}
