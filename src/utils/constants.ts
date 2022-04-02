@@ -18,13 +18,13 @@ export const favorites: Favorite[] = [
   },
   {
     title: 'Figma',
-    description: 'Design tool. So awesome and it&apos;s free. Use it if you haven&apos;t.',
+    description: "Design tool. So awesome and it's free. Use it if you haven't.",
     imagePath: 'images/figma.svg',
   },
   {
     title: 'Supabase',
     description:
-      'Everyone&apos;s favorite open source Firebase alternative. Give it a try if you haven&apos;t yet.',
+      "Everyone's favorite open source Firebase alternative. Give it a try if you haven't yet.",
     imagePath: 'images/supabase.svg',
   },
   {
@@ -35,7 +35,7 @@ export const favorites: Favorite[] = [
   {
     title: 'HubSpot',
     description:
-      'CRM/Sales tools/CMS/Marketing tools/many other things. Great tool. Use it if you haven&apos;t.',
+      "CRM/Sales tools/CMS/Marketing tools/many other things. Great tool. Use it if you haven't.",
     imagePath: 'images/hubspot.svg',
   },
 ]
