@@ -8,3 +8,9 @@ export interface Social {
   name: string
   url: string
 }
+
+export interface Article {
+  title: string
+  imagePath: string
+  link: string
+}

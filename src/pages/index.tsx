@@ -2,10 +2,11 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
 import FavoriteCell from '../components/favorite-cell'
-import { favorites, socials } from '../utils/constants'
+import { articles, favorites, socials } from '../utils/constants'
 import SocialButton from '../components/social-button'
 import Wrapper from '../components/wrapper'
 import { useHubspotForm } from '@aaronhayes/react-use-hubspot-form'
+import ArticleCell from '../components/article-cell'
 
 const Home: NextPage = () => {
   const { loaded, formCreated } = useHubspotForm({
@@ -67,6 +68,15 @@ const Home: NextPage = () => {
             </div>
           </Wrapper>
         </div>
+
+        <Wrapper>
+          <h2 className="text-center pb-5 text-3xl md:text-5xl">Articles of Me</h2>
+          <div className="flex justify-around flex-wrap">
+            {articles.map((article) => (
+              <ArticleCell key={article.imagePath} article={article}></ArticleCell>
+            ))}
+          </div>
+        </Wrapper>
 
         <Wrapper>
           <h2 className="text-center pb-5 text-3xl md:text-5xl">Contact me</h2>

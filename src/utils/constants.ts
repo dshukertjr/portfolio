@@ -1,4 +1,4 @@
-import { Favorite, Social } from './types'
+import { Article, Favorite, Social } from './types'
 
 export const favorites: Favorite[] = [
   {
@@ -52,5 +52,18 @@ export const socials: Social[] = [
   {
     name: 'twitter',
     url: 'https://twitter.com/dshukertjr',
+  },
+]
+
+export const articles: Article[] = [
+  {
+    title: '父がMITなら私はスタンフォードだ 入学できなかったけど - Japanese',
+    imagePath: '/images/stanford-mit.jpeg',
+    link: 'https://atmarkit.itmedia.co.jp/ait/articles/2111/15/news004.html',
+  },
+  {
+    title: '品川でのホームレス経験が「エンジニアの原風景」になった - Japanese',
+    imagePath: '/images/solutions-engineer.jpeg',
+    link: 'https://atmarkit.itmedia.co.jp/ait/articles/2111/16/news005_2.html',
   },
 ]
