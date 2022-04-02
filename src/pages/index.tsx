@@ -42,9 +42,11 @@ const Home: NextPage = () => {
               About Me
             </h2>
             <img
-              className="profile-image w-44 mx-auto md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-4"
+              className="profile-image object-cover mx-auto md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-4"
               src="images/profile.jpg"
               alt="profile"
+              width="176"
+              height="253"
             />
             <p className="pt-4 text-lg md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 md:pt-0 md:pb-4">
               Mobile/ Web app developer. <br />
