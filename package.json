@@ -9,7 +9,6 @@
     "lint": "tsc --project ./ --pretty --noEmit && eslint . --ext js,jsx,ts,tsx --fix"
   },
   "dependencies": {
-    "@aaronhayes/react-use-hubspot-form": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
     "autoprefixer": "^10.3.4",
