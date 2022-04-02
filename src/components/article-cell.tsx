@@ -15,6 +15,7 @@ const ArticleCell: FC<{ article: Article }> = ({ article }) => {
         alt={article.title}
         width="300"
         height="200"
+        loading="lazy"
       />
       <div className="absolute p-2 inset-0 top-auto bg-black bg-opacity-30">
         <h4 className="text-lg text-left text-white">{article.title}</h4>
