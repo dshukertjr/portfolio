@@ -60,7 +60,7 @@ const ProfileForm: FC = () => {
         e.preventDefault()
         submit()
       }}
-      className="mx-auto max-w-xl relative"
+      className="mx-auto max-w-xl relative pb-28"
     >
       <FormField
         label="Email"
