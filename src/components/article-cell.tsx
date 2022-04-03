@@ -4,7 +4,7 @@ import { Article } from '../utils/types'
 const ArticleCell: FC<{ article: Article }> = ({ article }) => {
   return (
     <a
-      className="block overflow-hidden relative group m-4"
+      className="block overflow-hidden rounded-sm relative group m-4"
       href={article.link}
       target="_blank"
       rel="noreferrer"
