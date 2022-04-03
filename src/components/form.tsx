@@ -8,14 +8,6 @@ const ProfileForm: FC = () => {
   const [message, setMessage] = useState<string>('')
   const [haveSubmitted, setHaveSubmitted] = useState<boolean>(false)
 
-  const getCookie = (name: string): string | null => {
-    const value = `; ${document.cookie}`
-    const parts = value.split(`; ${name}=`)
-    if (!parts) return null
-    else if (parts.length === 2) return parts.pop()?.split(';').shift() ?? null
-    return null
-  }
-
   const submit = (): void => {
     try {
       const formData = {
@@ -42,7 +34,6 @@ const ProfileForm: FC = () => {
           },
         ],
         context: {
-          hutk: getCookie('hubspotutk'),
           pageUri: window.location.href,
           pageName: document.getElementsByTagName('title')[0].innerHTML,
         },
@@ -96,7 +87,7 @@ const ProfileForm: FC = () => {
       <FormField
         label="Message"
         name="message"
-        type="text"
+        type="textarea"
         required={true}
         onChange={(val) => setMessage(val)}
       ></FormField>
