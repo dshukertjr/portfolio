@@ -10,7 +10,7 @@ const ArticleCell: FC<{ article: Article }> = ({ article }) => {
       rel="noreferrer"
     >
       <img
-        className="block group-hover:scale-150 transition-transform transform-gpu object-cover"
+        className="block group-hover:scale-110 transition-transform transform-gpu object-cover"
         src={article.imagePath}
         alt={article.title}
         width="300"
