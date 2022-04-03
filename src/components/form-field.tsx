@@ -11,7 +11,10 @@ const FormField: FC<{
 }> = ({ label, name, type, onChange, required = false }) => {
   return (
     <div className="py-2 w-full">
-      <label htmlFor={name}>{label}</label>
+      <label htmlFor={name}>
+        {label}
+        <span className="text-red-500">{required ? ' *' : ''}</span>
+      </label>
       {type == 'textarea' ? (
         <textarea
           className="border border-neutral-700 rounded-sm block w-full p-2"
