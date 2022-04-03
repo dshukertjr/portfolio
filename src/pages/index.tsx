@@ -22,7 +22,7 @@ const Home: NextPage = () => {
       </Head>
 
       <header>
-        <div className="h-screen flex justify-center items-center bg-header bg-cover bg-fixed bg-center px-6">
+        <div className="h-screen flex justify-center items-center bg-black bg-header bg-cover bg-fixed bg-center px-6">
           <h1 className="text-white px-12 py-6 border-4 border-white text-4xl md:text-8xl">
             Hi, I&apos;m Tyler
           </h1>
