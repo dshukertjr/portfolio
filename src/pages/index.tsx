@@ -7,6 +7,7 @@ import SocialButton from '../components/social-button'
 import Wrapper from '../components/wrapper'
 import ArticleCell from '../components/article-cell'
 import ProfileForm from '../components/form'
+import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
@@ -34,13 +35,16 @@ const Home: NextPage = () => {
             <h2 className="text-center pb-4 text-3xl md:text-5xl md:col-start-2 md:col-end-3 md:pb-0">
               About Me
             </h2>
-            <img
-              className="profile-image object-cover mx-auto md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-4"
-              src="images/profile.jpg"
-              alt="profile"
-              width="176"
-              height="253"
-            />
+            <div className="text-center  md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-4">
+              <Image
+                className="profile-image object-cover mx-auto"
+                src="/images/profile.jpg"
+                alt="profile"
+                layout="fixed"
+                width={176}
+                height={253}
+              />
+            </div>
             <p className="pt-4 text-lg md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 md:pt-0 md:pb-4">
               Tyler Shukert
               <br />
