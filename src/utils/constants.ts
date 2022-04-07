@@ -29,7 +29,7 @@ export const favorites: Favorite[] = [
   },
   {
     title: 'PostgreSQL',
-    description: 'Database for Supabase. Made me re-realize how great SQL databases are.',
+    description: 'Database used in Supabase. Made me re-realize how great SQL databases are.',
     imagePath: 'images/posgresql.svg',
   },
   {
@@ -64,6 +64,6 @@ export const articles: Article[] = [
   {
     title: '品川でのホームレス経験が「エンジニアの原風景」になった - Japanese',
     imagePath: '/images/solutions-engineer.jpeg',
-    link: 'https://atmarkit.itmedia.co.jp/ait/articles/2111/16/news005_2.html',
+    link: 'https://atmarkit.itmedia.co.jp/ait/articles/2111/16/news005.html',
   },
 ]
