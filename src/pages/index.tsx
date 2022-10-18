@@ -71,7 +71,7 @@ const Home: NextPage = () => {
         </div>
 
         <Wrapper>
-          <h2 className="text-center pb-5 text-3xl md:text-5xl">Articles of Me</h2>
+          <h2 className="text-center pb-5 text-3xl md:text-5xl">Articles / Speakers</h2>
           <div className="flex justify-around flex-wrap">
             {articles.map((article) => (
               <ArticleCell key={article.imagePath} article={article}></ArticleCell>
