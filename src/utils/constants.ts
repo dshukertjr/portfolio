@@ -67,8 +67,13 @@ export const articles: Article[] = [
     link: 'https://atmarkit.itmedia.co.jp/ait/articles/2111/16/news005.html',
   },
   {
-    title: 'AWS Dev Day 2022 Speaker',
-    imagePath: '/images/aws-dev-day-2022.png',
-    link: 'https://aws.amazon.com/jp/events/devday/japan/?aws-dev-day-2022-japan-cards.sort-by=item.additionalFields.sortOrder&aws-dev-day-2022-japan-cards.sort-order=asc&awsf.aws-dev-day-2022-japan-filter-session-category2=*all&awsf.aws-dev-day-2022-japan-filter-track=track%23track-a&awsf.aws-dev-day-2022-japan-filter-dev-type=*all&awsf.aws-dev-day-2022-japan-filter-dev-subject=*all&awsf.aws-dev-day-2022-japan-filter-tech-category=*all&awsf.aws-dev-day-2022-japan-filter-dev-level=*all#Day_0__.7C__11_.E6.9C.88_8_.E6.97.A5_18.3A00_.EF.BD.9E_20.3A55',
+    title: 'AWS Dev Day 2022 Guest Speaker',
+    imagePath: '/images/aws-dev-day-2022.jpeg',
+    link: 'https://www.youtube.com/watch?v=XWYkpQRLsFk',
+  },
+  {
+    title: 'FlutterGakkai Speaker',
+    imagePath: '/images/fluttergakkai.png',
+    link: 'https://www.youtube.com/live/IpcFqABBKvU?feature=share&t=2128',
   },
 ]
